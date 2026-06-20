@@ -65,6 +65,8 @@ Description:
 - refactored login logic to make it more readable
 ```
 
+## Output
+
 ### Push to remote
 Push the commit to the remote repository:
 ```bash
@@ -89,7 +91,6 @@ Reasoning behind the solution here
 - Upon PR creation all commits are squashed into one commit unless there is already a PR open.
 - When squashing commits, the smashed commit message should follow the commit message guidelines.
 
-## Output
 ### Commit Created
 
 **Commit Hash**: [hash]
