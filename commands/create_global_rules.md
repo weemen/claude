@@ -22,12 +22,22 @@ The global rules file should contain the following:
 - Logging Rules: how should logging be done in the project. Which logging library should be used, what information should be logged, and how should logs be structured.
 - Development Workflow Commands: which commands should be used for development, testing, and deployment. This can include commands for running the application, running tests, and deploying to production.
 - Testing Structure: All code needs tests, mirroring structure is critical
-- Committable code: All code needs to be formatted, linted and all tests need to pass before a commit can be made.
+- Committable code: Everything that is needs for commiting code. See section: "Commitable code" below
 
 The global rules file should be stored in the project root directory.
 The global rules file may contain examples
 The global rules file does not contain more than 500 lines
-The global rules file is concise and easy to read 
+The global rules file is concise and easy to read
+
+### Commitable code:
+In the section commitable code it should also describe the following things
+- All code is formated and linted.
+- All tests are green.
+- Non Draft PR templates are always followed, even for draft PRs.
+- If asked to describe the fix then do this in markdown format and in stages: The problem, the solution and the reasoning behind the solution.
+- If certain function are used that are called unsafe or if unescaping is deliberately not done then explain why this is not a security risk.
+- Commit messages are multiline. They start with Jira ticket number and end with a short description. On the Description header which should be capitalized and then a longer description.
+- All commits are squashed unless there is already a PR open. 
 
 ## Output
 The global rules file is created and tell me where I can find the file.
