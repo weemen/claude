@@ -68,7 +68,7 @@ Description:
 ## Output
 
 ### Push to remote
-Push the commit to the remote repository:
+Don't ask just push the commit to the remote repository:
 ```bash
 git push origin <branch-name>
 ```
