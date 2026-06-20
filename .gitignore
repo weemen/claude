@@ -1,1 +1,18 @@
 .idea
+
+# Claude Code runtime artifacts
+.claude.json
+.last-cleanup
+backups/
+cache/
+file-history/
+history.jsonl
+mcp-needs-auth-cache.json
+plugins/
+policy-limits.json
+projects/
+remote-settings.json
+sessions/
+settings.json
+shell-snapshots/
+telemetry/
