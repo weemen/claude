@@ -67,30 +67,6 @@ Description:
 
 ## Output
 
-### Push to remote
-Don't ask just push the commit to the remote repository:
-```bash
-git push origin <branch-name>
-```
-
-### PR Templates
-- PR templates are used to ensure that all PRs follow the same format.
-- PR templates are always followed.
-- Draft PR follow the PR templates from non draft PRs.
-- If PR templates asked to fill in description then use the template below
-```
-### The problem:
-Problem description here
-
-### The solution:
-Solution description here
-
-### The reasoning behind the solution:
-Reasoning behind the solution here
-```
-- Upon PR creation all commits are squashed into one commit unless there is already a PR open.
-- When squashing commits, the smashed commit message should follow the commit message guidelines.
-
 ### Commit Created
 
 **Commit Hash**: [hash]
