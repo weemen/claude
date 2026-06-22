@@ -3,6 +3,7 @@
 # Claude Code runtime artifacts
 .claude.json
 .last-cleanup
+.last-update-result.json
 backups/
 cache/
 file-history/
