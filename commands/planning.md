@@ -7,10 +7,41 @@ description: Plan out a problem in smaller steps
 ## Context
 Role: Researcher
 Load via the atlassian tool jira ticket $ARGUMENTS
+The jira ticket number will be used as the name of the plan.
 
 ## Process
-Research the problem and break it down into smaller steps.
-In case when you are in doubt always ask me for more information about the problem.
+### 1. Analyze Existing Codebase Patterns
+
+Search for similar implementations:
+- Look for comparable features or components
+- Identify relevant files and their structure
+- Note patterns, conventions, and standards used
+- Document reusable code or utilities
+
+### 2. Research External Documentation
+
+If needed, search for:
+- Framework best practices
+- Library documentation
+- Design patterns
+- Similar implementations
+
+### 3. Design Implementation Approach
+
+Determine:
+- Which files need to be created or modified
+- What models/schemas are required
+- Which services or utilities are needed
+- How this integrates with existing code
+- What testing strategy to use
+
+### 4. Break Down Into Tasks
+
+Create detailed, actionable tasks with:
+- Specific file paths
+- Exact function/class names
+- Clear acceptance criteria
+- Validation commands
 
 ## Output
 The plan should be written to ./plans/$ARGUMENTS.md
@@ -22,6 +53,18 @@ The plan should contain the following information
 - - Single line title for the solution
 - - Description of the solution
 - - Reasoning behind the solution
+- - Why we chose this approach over alternatives
+- - Key technical decisions and trade-offs
+    **Approach Decision:**
+    We chose [approach name] because:
+- [Reason 1]
+- [Reason 2]
+- [Reason 3]
+
+**Alternatives Considered:**
+- [Alternative 1]: Rejected because [reason]
+- [Alternative 2]: Rejected because [reason]
+- - How this integrates with existing architecture]
 - - Acceptance criteria for the solution
 - - Benefits of the solution
 - - Potential risks and challenges
@@ -36,4 +79,7 @@ Follow the format in the planning template: Read @references/planning-template.m
 
 - Task creation
 Ask for confirmation of the plan before creating the tasks.
-If the plan is approved only then create the tasks following the format in the task template: Read @references/task-template.md
+If the plan is approved only then:
+- if the jira ticket is an epic create the user stories for the epic
+- if the jira ticket is not an epic then create sub-tasks for the jira ticket
+- create the tasks following the format in the task template: Read @references/task-template.md
