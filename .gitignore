@@ -9,6 +9,8 @@ cache/
 file-history/
 history.jsonl
 mcp-needs-auth-cache.json
+paste-cache/
+plans/
 plugins/
 policy-limits.json
 projects/
@@ -16,4 +18,6 @@ remote-settings.json
 sessions/
 settings.json
 shell-snapshots/
+stats-cache.json
+tasks/
 telemetry/
